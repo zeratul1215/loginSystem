@@ -17,6 +17,7 @@
     "@linktivity/link-styles": "^1.0.1",
     "@linktivity/link-ui": "^1.0.1",
     "@linktivity/link-utils": "^1.0.1",
+    "firebase": "^11.10.0",
     "i18next": "^23.10.1",
     "mobx": "^6.13.1",
     "mobx-react-lite": "^4.0.7",

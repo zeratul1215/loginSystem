@@ -15,6 +15,10 @@ export default defineConfig(({ mode }) => {
         '@': resolve(__dirname, 'src')
       }
     },
+    define: {
+      // 为浏览器环境提供 process 的 polyfill
+      'process.env': {}
+    },
     plugins: [
       react({
         babel: {

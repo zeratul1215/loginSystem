@@ -1,11 +1,17 @@
 import styles from './home.module.css';
-import { Button } from '@linktivity/link-ui';
+// import SignInView from '@/views/SignIn';
+import { useStore } from '@/stores';
 
 const HomeView = () => {
+  const { auth } = useStore();
+
+  // console.log(auth.user);
+
   return (
     <div className={styles.home}>
-      <Button>Click me</Button>
-      <h1 className={styles.title}>{'Home'}</h1>
+      <h1>Home</h1>
+      <p>User: {auth.user?.email}</p>
+      <p>Logged in: {auth.loggedIn ? 'Yes' : 'No'}</p>
     </div>
   );
 };
